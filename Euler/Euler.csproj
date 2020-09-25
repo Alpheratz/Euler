@@ -71,7 +71,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helpers\MessengerTokens.cs" />
+    <Compile Include="Models\LargestPrimeFactor.cs" />
     <Compile Include="Models\EulerProblem.cs" />
+    <Compile Include="Models\EvenFibonacci.cs" />
     <Compile Include="Models\Multiple3and5.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />

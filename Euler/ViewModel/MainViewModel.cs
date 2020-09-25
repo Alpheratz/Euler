@@ -65,6 +65,8 @@ namespace Euler.ViewModel
             MessengerInstance.Register<string>(this, MessengerTokens.Log, (i) => Log += $"{i}{Environment.NewLine}");
             Problems = new List<EulerProblem>();
             Problems.Add(new Multiple3and5());
+            Problems.Add(new EvenFibonacci());
+            Problems.Add(new LargestPrimeFactor());
             Selected = Problems.First();
         }
     }
