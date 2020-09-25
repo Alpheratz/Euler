@@ -17,7 +17,30 @@ namespace Euler.Models
 
         public override void SolveProblem()
         {
-            base.SolveProblem();
+            List<int> values = new List<int>();
+            Print("Start:");
+            int i = 1;
+            int x = 3;
+            
+            while (x < 1000)
+            {
+                x = 3 * i;
+                if(x < 1000)values.Add(x);
+                i++;
+            }
+            x = 5; i = 1;
+            while (x < 1000)
+            {
+                x = 5 * i;
+                if ( x < 1000 && x % 3 > 0)values.Add(x);
+                i++;
+            }
+            Print($"Result: {values.Sum()}");
+            values.Sort();
+            Print(string.Join(" ",values));
+            
+            
+           
         }
     }
 }
